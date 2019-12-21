@@ -1,0 +1,51 @@
+version: '3.1'
+services:
+
+  docker-redis:
+    image: redis
+    container_name: docker-tp-redis
+    networks:
+      - network-db
+
+  docker-postgres:
+    image: postgres
+    container_name: docker-tp-postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: ynov69
+      POSTGRES_DB: tpdocker
+      PGDATA: /data/postgres
+    depends_on:
+      - docker-redis
+    networks:
+      -  network-db
+
+  docker-nodejs:
+    image: elricgumbau/team4-api
+    container_name: docker-tp-nodejs
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ../:/home/docker-tp
+    depends_on:
+      - docker-postgres
+    networks:
+      - network-db
+      - network-nodejs
+
+  docker-nginx:
+    build:
+      context: ./docker-nginx
+      dockerfile: Dockerfile
+    environment:
+      - HOSTNAME=docker-tp-nginx:3000
+    depends_on:
+      - docker-nodejs
+    networks:
+      - network-nodejs
+    ports:
+      - 8080:80
+
+networks:
+  network-db:
+  network-nodejs:
