@@ -3,7 +3,7 @@
     <img src="https://pbs.twimg.com/profile_images/979714483387092994/PMI-aUXp_400x400.jpg" alt="Logo" width=85 height=85>
   </a>
 
-  <h3 align="center">Ynov - B3 Info - GUMBAU Elric | Meau Alix</h3>
+  <h3 align="center">Ynov - B3 Info - GUMBAU Elric | MEAU Alix</h3>
 </p>
 
 ## B3 Devops - TP 2
