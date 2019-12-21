@@ -124,7 +124,7 @@ Check file in Docker/docker-nginx/default.conf.
 
 - Clone this git repo and place it anywhere on your pc
 
-- Open a terminal, go to the folder 'tp2-gumbau-elric' and type
+- Open a terminal, go to the folder 'tp2-team-4' and type
     
       npm install
       cd Docker/
