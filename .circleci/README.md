@@ -3,7 +3,7 @@
     <img src="https://d3r49iyjzglexf.cloudfront.net/circleci-logo-stacked-fb-2bbc2f98672809be0a4e917efde89548d5ee527dabbece4384317c540d2c3984.png" alt="Logo" width=85 height=85>
   </a>
 
-  <h3 align="center">Ynov - B3 Info - GUMBAU Elric | Meau Alix</h3>
+  <h3 align="center">Ynov - B3 Info - GUMBAU Elric | MEAU Alix</h3>
 </p>
 
 ## B3 Devops - TP 2
